@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Welcome to CDN Management System</h1>
+        <p class="lead">A production-grade CDN simulation platform for the Microsoft Tech Community</p>
+        
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">System Status</h5>
+                <p class="card-text">
+                    <strong>Status:</strong> <span class="badge bg-success">Operational</span><br>
+                    <strong>Current Time:</strong> {{ current_time.strftime('%Y-%m-%d %H:%M:%S UTC') }}<br>
+                    <strong>Region:</strong> India (Central)
+                </p>
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary">Upload Content</a>
+            <a href="{{ url_for('main.health_check') }}" class="btn btn-outline-secondary">Health Check</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
