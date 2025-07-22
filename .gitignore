@@ -1,6 +1,31 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.egg-info/
+
+# Test and coverage
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Ignore local settings
+config/local_settings.py
 *$py.class
 *.so
 .Python
