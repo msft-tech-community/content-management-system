@@ -1,41 +1,28 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-
-# Flask
-instance/
-.webassets-cache
+*.pyo
+*.pyd
 
 # Environment variables
 .env
-.flaskenv
 
-# IDEs
+# VSCode
 .vscode/
-.idea/
-*.swp
-*.swo
 
-# OS
+# macOS
 .DS_Store
-Thumbs.db
 
-# Azure
-.azure/
+# Byte-compiled / optimized / DLL files
+*.so
+*.egg-info/
 
-# Uploads (temporary files)
-uploads/
-temp/
+# Test and coverage
+.coverage
+htmlcov/
 
 # Logs
 *.log
-logs/
 
-# Testing
-.coverage
-htmlcov/
-.pytest_cache/
+# Ignore local settings
+config/local_settings.py
