@@ -5,6 +5,7 @@ services_path = os.path.join(os.path.dirname(__file__), 'services')
 if not os.path.exists(services_path):
     os.makedirs(services_path)
 
+
 def create_app(config_name='development'):
     """Application factory pattern for Flask app creation"""
     app = Flask(__name__)
